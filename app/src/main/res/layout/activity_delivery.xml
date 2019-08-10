@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".DeliveryActivity">
+
+    <Button
+        android:id="@+id/btn_branchcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/button_background"
+        android:textColor="#FFFFFF"
+        android:text="Branch Code"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp" />
+
+    <Button
+        android:id="@+id/btn_lrno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LR No."
+        android:layout_alignBaseline="@+id/btn_branchcode"
+        android:layout_alignBottom="@+id/btn_branchcode"
+        android:layout_toEndOf="@+id/btn_branchcode"
+        android:textColor="#FFFFFF"
+        android:background="@color/button_background"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/btn_branchcode"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:background="@color/button_background"
+        android:layout_marginEnd="7dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/btn_lrno"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/et_lr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_branchcode"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/btn_branchcode"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/btn_branchcode" />
+
+    <EditText
+        android:id="@+id/et_consineename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_lr"
+        android:layout_below="@+id/et_lr"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/et_lr" />
+
+    <EditText
+        android:id="@+id/et_consignorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_consineename"
+        android:layout_below="@+id/et_consineename"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/et_consineename" />
+
+    <EditText
+        android:id="@+id/et_totalpackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_consignorname"
+        android:layout_below="@+id/et_consignorname"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/et_totalweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_totalpackage"
+        android:layout_below="@+id/et_totalpackage"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/et_totalpackage" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_consineename"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/et_lr"
+        android:text="LR"
+        android:textColor="@color/textcolor"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/et_lr" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_consignorname"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_marginBottom="5dp"
+        android:text="Consinee Name"
+        android:textColor="@color/textcolor"
+        android:layout_alignRight="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_totalpackage"
+        android:layout_alignEnd="@+id/textView13"
+        android:layout_marginBottom="5dp"
+        android:text="Consignor Name"
+        android:textColor="@color/textcolor"
+        android:layout_alignRight="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_totalweight"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_marginBottom="5dp"
+        android:text="Total Package"
+        android:textColor="@color/textcolor"
+        android:layout_alignRight="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_totalweight"
+        android:layout_alignEnd="@+id/textView15"
+        android:layout_marginBottom="5dp"
+        android:text="Total Weight"
+        android:textColor="@color/textcolor"
+        android:layout_alignRight="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_totalweight"
+        android:layout_marginTop="35dp"
+        android:layout_toStartOf="@+id/et_totalweight"
+        android:text="Capture"
+        android:textColor="@color/textcolor"
+        android:layout_toLeftOf="@+id/et_totalweight" />
+
+    <ImageView
+        android:id="@+id/imageView_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_totalweight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@mipmap/rect"
+        />
+
+    <ImageView
+        android:id="@+id/imageView_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/camera" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@color/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn_lrno"
+        android:layout_alignLeft="@+id/btn_lrno" />
+
+</RelativeLayout>

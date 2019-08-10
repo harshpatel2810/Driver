@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall">
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/icon"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/img2"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true" />
+
+   <RelativeLayout
+       android:layout_below="@+id/img"
+       android:layout_marginTop="5dp"
+       android:padding="8dp"
+       android:gravity="center_vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/imageViewIcon"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_centerVertical="true"
+           android:src="@mipmap/logout_icon"
+           android:tint="@color/colorPrimaryDark" />
+
+       <TextView
+           android:id="@+id/textViewName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/imageViewIcon"
+           android:text="Item Name"
+           android:layout_marginLeft="13dp"
+           android:layout_centerVertical="true"
+           android:textAppearance="?android:attr/textAppearanceListItemSmall"
+           android:textColor="@android:color/black" />
+
+   </RelativeLayout>
+
+</RelativeLayout>

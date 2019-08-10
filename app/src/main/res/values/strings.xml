@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">RPM for Driver</string>
+
+    <string name="Version"><u>Version : 1.0.0</u></string>
+    <string name="err_problem_loading">Problem in loading data!</string>
+    <string name="err_network">Please make sure that you\'re connected to internet.</string>
+    <string name="err_msg_email">Enter valid email address</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+
+    <string name="delivertitle">Select Tracking</string>
+    <string name="lrno">Your Lr No.</string>
+    <string name="branchcode">Branch Code</string>
+    <string name="resulttitle">Tracking Result</string>
+    <string name="status">Status:</string>
+    <string name="docketdate">LR Date:</string>
+    <string name="lrtype">LR Type:</string>
+    <string name="destination">Origin Destination:</string>
+    <string name="consignor">Consignor:</string>
+    <string name="consignee">Consignee:</string>
+    <string name="branchaddress">Branch Address:</string>
+    <string name="chalandate">Challan Date:</string>
+    <string name="vehicle">Vehicle No:</string>
+    <string name="packet">No of PKTS:</string>
+    <string name="from">From Station:</string>
+    <string name="to">To Station:</string>
+    <string name="weight">Total Weight:</string>
+    <string name="docketno">LR No:</string>
+    <string name="partyinvoice">Party invoice Number:</string>
+
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+
+</resources>
